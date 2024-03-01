@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Benedikt Brenk</h1>
+
+      <div>
+        <img
+          id="img1"
+          src="assets/myphoto.jpeg"
+          alt="That's me"
+          height="150px"
+        />
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#favourite">Favourite Music</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          My professional roots lie in the field of project management and
+          education within the context of culture and welfare work. Currently, I
+          am embarking on my adventurous journey into the world of coding with
+          neuefische (Hamburg). My aim is to professionalize in web development
+          to create useful web based apps. Additionally, I am interested in
+          project management.
+        </p>
+      </section>
+
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <p>01234556678 00135 Musterstadt</p>
+        <a href="https://github.com/benediktbrenk">
+          <img id="github" src="assets/github-mark.svg" alt="Clickable Image" />
+        </a>
+      </section>
+
+      <section id="favourite">
+        <h2>Favourite Music</h2>
+        <label for="music">Choose your favourite music:</label>
+        <select id="cars" name="cars">
+          <option value="Jazz">Jazz</option>
+          <option value="Classical">Classical</option>
+          <option value="Pop">Pop</option>
+        </select>
+      </section>
+
+      <section id="aboutmusic">
+        <h2>About the music</h2>
+        <details open>
+          <summary>Jazz</summary>
+          You like Jazz. I regularly give Jazz concerts with band XY.
+        </details>
+        <details>
+          <summary>What kind of content does he make?</summary>
+          He focuses on productivity tips using coding and spreadsheets. He
+          makes
+          <a href="https://youtube.com/@eamonncottrell">YouTube</a> videos and
+          writes articles on freeCodeCamp,
+          <a href="https://www.linkedin.com/in/eamonncottrell/">LinkedIn</a>
+          and his
+          <a href="https://got-sheet.beehiiv.com/">personal newsletter</a>.
+        </details>
+        <details>
+          <summary>What does he do for fun?</summary>
+          Hangs out with his wife and four kids, and runs ultramarathons.
+        </details>
+        <iframe
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1312889011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/seicentovocale"
+            title="Seicento vocale"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Seicento vocale</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/seicentovocale/schein-siehe-an-die-werk-gottes"
+            title="Johann Hermann Schein, Siehe An Die Werk Gottes"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Johann Hermann Schein, Siehe An Die Werk Gottes</a
+          >
+        </div>
+      </section>
+      <form></form>
+      <footer>
+        <p>Benedikt Brenk - Developer</p>
+      </footer>
+    </main>
+  </body>
+</html>
