@@ -24,17 +24,13 @@ if (number % 2) {
 const numberOfHotdogs = 1000001;
 
 if (numberOfHotdogs < 5) {
-  const price = numberOfHotdogs * 2;
-  console.log(price + "€");
-} else if (numberOfHotdogs > 5 && numberOfHotdogs < 100) {
-  const price = numberOfHotdogs * 1.5;
-  console.log(price + "€");
-} else if (numberOfHotdogs > 100 && numberOfHotdogs < 1000000) {
-  const price = numberOfHotdogs * 1;
-  console.log(price + "€");
+  console.log(2);
+} else if (numberOfHotdogs >= 5 && numberOfHotdogs < 100) {
+  console.log(1.5);
+} else if (numberOfHotdogs >= 100 && numberOfHotdogs <= 1000000) {
+  console.log(1);
 } else if (numberOfHotdogs > 1000000) {
-  const price = numberOfHotdogs * 0.1;
-  console.log(price + "€");
+  console.log(0.1);
 }
 
 // Part 4: Daytime
