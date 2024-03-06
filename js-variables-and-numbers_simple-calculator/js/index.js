@@ -1,7 +1,9 @@
 console.clear();
 
-const operand1 = 12;
-const operand2 = 4;
+let operand1 = 12;
+let operand2 = 4;
+
+document.querySelector('[data-js="operand1"]').innerText = operand1;
 
 /*
 Mathematical operations
@@ -72,37 +74,43 @@ const multiplyByTwoButton = document.querySelector(
 const divideByTwoButton = document.querySelector('[data-js="divide-by-two"]');
 
 increaseByOneButton.addEventListener("click", () => {
-  const result = operand1 + 1;
-  console.log(result);
+  operand1++;
+  console.log(operand1);
+  document.querySelector('[data-js="operand1"]').innerText = operand1;
   // 7. Increase the value of "operand1" by 1. Log the new value to the console.
 });
 
 increaseByFiveButton.addEventListener("click", () => {
-  const result = operand1 + 5;
-  console.log(result);
+  operand1 += 5;
+  console.log(operand1);
+  document.querySelector('[data-js="operand1"]').innerText = operand1;
   // 8. Increase the value of "operand1" by 5. Log the new value to the console.
 });
 
 decreaseByOneButton.addEventListener("click", () => {
-  const result = operand1 - 1;
-  console.log(result);
+  operand1 -= 1;
+  console.log(operand1);
+  document.querySelector('[data-js="operand1"]').innerText = operand1;
   // 7. Decrease the value of "operand1" by 1. Log the new value to the console.
 });
 
 decreaseByFiveButton.addEventListener("click", () => {
-  const result = operand1 - 5;
-  console.log(result);
+  operand1 -= 5;
+  console.log(operand1);
+  document.querySelector('[data-js="operand1"]').innerText = operand1;
   // 8. Decrease the value of "operand1" by 5. Log the new value to the console.
 });
 
 multiplyByTwoButton.addEventListener("click", () => {
-  const result = operand1 * 2;
-  console.log(result);
+  operand1 *= 2;
+  console.log(operand1);
+  document.querySelector('[data-js="operand1"]').innerText = operand1;
   // 11. Multiply the value of "operand1" by 2. Log the new value to the console.
 });
 
 divideByTwoButton.addEventListener("click", () => {
-  const result = operand1 / 2;
-  console.log(result);
+  operand1 /= 2;
+  console.log(operand1);
+  document.querySelector('[data-js="operand1"]').innerText = operand1;
   // 12. Divide the value of "operand1" by 2. Log the new value to the console.
 });
