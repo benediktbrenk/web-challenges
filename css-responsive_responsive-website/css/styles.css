@@ -152,6 +152,7 @@ fairly essential to completing this challenge. */
   align-items: center;
   gap: var(--gap);
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* Product Card + Backgrounds */
@@ -242,12 +243,43 @@ fairly essential to completing this challenge. */
 CSS when certain conditions that we declare are met - such as a certain viewport 
 width, etc. */
 
-/* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media (min-width: 820px) {
+  .card-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap);
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    width: 45%;
+  }
 
-/* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+  .intro-text {
+    color: var(--dark-beige);
+    font-size: var(--regular-text);
+    line-height: var(--regular-text-line-height);
+    width: 45%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 250px;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px 0px var(--inky-black);
+  }
+
+  .--forest {
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+  }
+}
