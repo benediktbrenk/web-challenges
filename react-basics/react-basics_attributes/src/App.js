@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  return Article();
+  return <Article />;
 }
 
 function Article() {
@@ -10,7 +10,7 @@ function Article() {
     <article className="article">
       <h2 className="article__title">Hello World</h2>
       <label htmlFor="input"></label>
-      <input id="input"></input>
+      <input type="text" id="input"></input>
       <a className="article__link" href="https://www.seicentovocale.de">
         Seicento
       </a>
