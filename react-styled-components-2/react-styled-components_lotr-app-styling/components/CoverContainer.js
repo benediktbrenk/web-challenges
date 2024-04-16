@@ -22,17 +22,15 @@ export default function CoverContainer({ volume, title, cover, books }) {
     margin: 1rem;
   `;
 
-  const Ul = styled.ul`
-    /* padding: 0; */
-  `;
-
   const Li = styled.li`
     display: flex;
     flex-direction: column;
+    padding: 1.5rem 0;
   `;
 
   const Ordinal = styled.span`
     font: var(--font-caption--italic);
+    padding: 0.2rem 0;
   `;
 
   const Title = styled.strong`
@@ -41,14 +39,14 @@ export default function CoverContainer({ volume, title, cover, books }) {
   return (
     <Div>
       <Books>
-        <Ul>
+        <ul>
           {books.map(({ ordinal, title }) => (
             <Li key={title}>
               <Ordinal>{ordinal}:</Ordinal>
               <Title>{title}</Title>
             </Li>
           ))}
-        </Ul>
+        </ul>
         <StyledImage
           src={cover}
           alt={`Cover image of ${title}`}

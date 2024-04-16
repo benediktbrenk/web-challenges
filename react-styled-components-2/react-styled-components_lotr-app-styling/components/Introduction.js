@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import TextContainer from "./TextContainer";
 
-export default function introduction({ title, description }) {
+export default function Introduction({ title, description }) {
   const IntroductionContainer = styled.div`
     width: var(--width-wrapper);
   `;
