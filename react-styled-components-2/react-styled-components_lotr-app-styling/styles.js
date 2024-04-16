@@ -27,8 +27,9 @@ export const GlobalStyle = createGlobalStyle`
 
   ul {
     padding: 0;
+    list-style: none;
   }
-
+  
   :root {
   /* Color styles */
   --color-earth: #282828;
